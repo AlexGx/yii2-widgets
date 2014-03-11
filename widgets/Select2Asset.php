@@ -22,7 +22,7 @@ class Select2Asset extends AssetBundle
     public function init()
     {
         $this->setSourcePath(__DIR__ . '/../lib/select2');
-        $this->setupAssets('css', ['select2', 'select2-bootstrap3']);
+        $this->setupAssets('css', ['select2', 'select2-custom']);
         $this->setupAssets('js', ['select2']);
         parent::init();
     }
