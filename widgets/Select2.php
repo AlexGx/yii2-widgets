@@ -110,6 +110,10 @@ class Select2 extends InputWidget
             $this->options['style'] = 'width: 100%';
         }
 
+		if ($this->language === false) {
+			$this->language = Yii::$app->language;
+		}
+
         $this->registerAssets();
         $this->renderInput();
     }
